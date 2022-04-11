@@ -14,6 +14,7 @@ require 'unit/pluralization/one_with_zero_other'
 require 'unit/pluralization/one_upto_two_other'
 require 'unit/pluralization/one_two_other'
 require 'unit/pluralization/east_slavic'
+require 'unit/pluralization/south_slavic'
 require 'unit/pluralization/west_slavic'
 require 'unit/pluralization/romanian'
 
@@ -105,7 +106,7 @@ describe 'Pluralization rule for' do
 
   describe 'Bosnian', :locale => :bs do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'East Slavic'
+    it_behaves_like 'South Slavic'
   end
 
   describe 'Breton', :locale => :br do
@@ -209,7 +210,7 @@ describe 'Pluralization rule for' do
 
   describe 'Croatian', :locale => :hr do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'East Slavic'
+    it_behaves_like 'South Slavic'
   end
 
   describe 'Czech', :locale => :cs do
@@ -656,34 +657,12 @@ describe 'Pluralization rule for' do
 
   describe 'Serbian', :locale => :sr do
     it_behaves_like 'an ordinary pluralization rule'
-
-    it 'has "one", "few", and "other" plural keys' do
-      plural_keys.size.should == 3
-      plural_keys.should include(:one, :few, :other)
-    end
-
-    [1, 21, 31, 41, 51, 61, 81, 101, 1031].each do |count|
-      it "detects that #{count} in category 'one'" do
-        rule.call(count).should == :one
-      end
-    end
-
-    [2, 3, 4, 22, 23, 24, 102, 1034].each do |count|
-      it "detects that #{count} in category 'few'" do
-        rule.call(count).should == :few
-      end
-    end
-
-    [0.11, 0.13, 56.78, 11, 12, 13, 14, 15, 27, 100, 1012].each do |count|
-      it "detects that #{count} in category 'other'" do
-        rule.call(count).should == :other
-      end
-    end
+    it_behaves_like 'South Slavic'
   end
 
   describe 'Serbo-Croatian', :locale => :sh do
     it_behaves_like 'an ordinary pluralization rule'
-    it_behaves_like 'East Slavic'
+    it_behaves_like 'South Slavic'
   end
 
   describe 'Sichuan Yi', :locale => :ii do

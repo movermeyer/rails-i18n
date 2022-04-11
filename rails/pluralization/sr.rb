@@ -1,3 +1,3 @@
-require 'rails_i18n/common_pluralizations/serbian'
+require 'rails_i18n/common_pluralizations/south_slavic'
 
-::RailsI18n::Pluralization::Serbian.with_locale(:sr)
+::RailsI18n::Pluralization::SouthSlavic.with_locale(:sr)
