@@ -142,7 +142,7 @@ nb:
     template:
       body: 'Det oppstod problemer med følgende felt:'
       header:
-        one: Kunne ikke lagre %{model} på grunn av én feil.
+        one: Kunne ikke lagre %{model} på grunn av %{count} feil.
         other: Kunne ikke lagre %{model} på grunn av %{count} feil.
   helpers:
     select:
