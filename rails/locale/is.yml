@@ -137,7 +137,7 @@ is:
     template:
       body: 'Villur fundust í eftirfarandi dálkum:'
       header:
-        one: Ekki var hægt að vista %{model} vegna einnar villu.
+        one: Ekki var hægt að vista %{model} vegna %{count} villu.
         other: Ekki var hægt að vista %{model} vegna %{count} villna.
   helpers:
     select:
