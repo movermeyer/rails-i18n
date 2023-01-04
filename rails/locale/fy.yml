@@ -63,41 +63,41 @@ fy:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: likernôch 1 oere
+        one: likernôch %{count} oere
         other: likernôch %{count} oeren
       about_x_months:
-        one: likernôch 1 moanne
+        one: likernôch %{count} moanne
         other: likernôch %{count} moannen
       about_x_years:
-        one: likernôch 1 jier
+        one: likernôch %{count} jier
         other: likernôch %{count} jier
       almost_x_years:
-        one: hast 1 jier
+        one: hast %{count} jier
         other: hast %{count} jier
       half_a_minute: in heale minút
       less_than_x_seconds:
-        one: minder as 1 sekonde
+        one: minder as %{count} sekonde
         other: minder as %{count} sekonden
       less_than_x_minutes:
         one: minder as in minút
         other: minder as %{count} minuten
       over_x_years:
-        one: mear as 1 jier
+        one: mear as %{count} jier
         other: mear as %{count} jier
       x_seconds:
-        one: 1 sekonde
+        one: "%{count} sekonde"
         other: "%{count} sekonden"
       x_minutes:
-        one: 1 minút
+        one: "%{count} minút"
         other: "%{count} minuten"
       x_days:
-        one: 1 dei
+        one: "%{count} dei"
         other: "%{count} dagen"
       x_months:
-        one: 1 moanne
+        one: "%{count} moanne"
         other: "%{count} moannen"
       x_years:
-        one: 1 jier
+        one: "%{count} jier"
         other: "%{count} jier"
     prompts:
       second: sekonde
@@ -131,18 +131,18 @@ fy:
       required: moat der wêze
       taken: is al ynnommen
       too_long:
-        one: is te lang (maksimum is 1 teken)
+        one: is te lang (maksimum is %{count} teken)
         other: is te lang (maksimum is %{count} tekens)
       too_short:
-        one: is te koart (minimum is 1 teken)
+        one: is te koart (minimum is %{count} teken)
         other: is te koart (minimum is %{count} tekens)
       wrong_length:
-        one: hat de ferkearde lingte (moat 1 teken wêze)
+        one: hat de ferkearde lingte (moat %{count} teken wêze)
         other: hat de ferkearde lingte (moat %{count} tekens wêze)
     template:
       body: 'Der binne problemen mei de neikommende fjilden:'
       header:
-        one: 1 flater behinderet it fêstlizzen fan %{model}
+        one: "%{count} flater behinderet it fêstlizzen fan %{model}"
         other: "%{count} flaters behinderje it fêstlizzen fan %{model}"
   helpers:
     select:
