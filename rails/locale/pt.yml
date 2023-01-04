@@ -79,7 +79,7 @@ pt:
         one: menos de %{count} segundo
         other: menos de %{count} segundos
       less_than_x_minutes:
-        one: menos de um minuto
+        one: menos de %{count} minuto
         other: menos de %{count} minutos
       over_x_years:
         one: mais de %{count} ano
