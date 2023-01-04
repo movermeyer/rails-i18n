@@ -140,7 +140,7 @@ de-AT:
     template:
       body: 'Bitte überprüfen Sie die folgenden Felder:'
       header:
-        one: 'Konnte %{model} nicht speichern: ein Fehler.'
+        one: 'Konnte %{model} nicht speichern: %{count} Fehler.'
         other: 'Konnte %{model} nicht speichern: %{count} Fehler.'
   helpers:
     select:

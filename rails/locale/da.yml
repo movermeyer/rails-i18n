@@ -142,7 +142,7 @@ da:
     template:
       body: 'Der var problemer med følgende felter:'
       header:
-        one: En fejl forhindrede %{model} i at blive gemt
+        one: "%{count} fejl forhindrede %{model} i at blive gemt"
         other: "%{count} fejl forhindrede %{model} i at blive gemt"
   helpers:
     select:

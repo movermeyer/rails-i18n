@@ -126,7 +126,7 @@ sw:
     template:
       body: 'Tafadhali kagua sehemu zifuatazo:'
       header:
-        one: "%{model} haikuhifadhiwa kwa sababu moja."
+        one: "%{model} haikuhifadhiwa kwa sababu %{count}."
         other: "%{model} haikuhifadhiwa kwa sababu %{count}."
   helpers:
     select:

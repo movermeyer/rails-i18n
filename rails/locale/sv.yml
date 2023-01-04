@@ -136,7 +136,7 @@ sv:
     template:
       body: 'Det var problem med följande fält:'
       header:
-        one: Ett fel förhindrade ifrågavarande %{model} från att sparas
+        one: "%{count} fel förhindrade ifrågavarande %{model} från att sparas"
         other: "%{count} fel förhindrade ifrågavarande %{model} från att sparas"
   helpers:
     select:
