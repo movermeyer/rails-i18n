@@ -85,19 +85,19 @@ sc:
         one: prus de un'annu
         other: prus de %{count} annos
       x_seconds:
-        one: 1 segundu
+        one: "%{count} segundu"
         other: "%{count} segundos"
       x_minutes:
-        one: 1 minutu
+        one: "%{count} minutu"
         other: "%{count} minutos"
       x_days:
-        one: 1 die
+        one: "%{count} die"
         other: "%{count} dies"
       x_months:
-        one: 1 mese
+        one: "%{count} mese"
         other: "%{count} meses"
       x_years:
-        one: 1 annu
+        one: "%{count} annu"
         other: "%{count} annos"
     prompts:
       second: Segundu
@@ -132,18 +132,18 @@ sc:
       required: depet esìstere
       taken: est giai presente
       too_long:
-        one: est tropu longu (su màssimu est de 1 caràtere)
+        one: est tropu longu (su màssimu est de %{count} caràtere)
         other: est tropu longu (su màssimu est de %{count} caràteres)
       too_short:
-        one: est tropu curtzu (su mìnimu est de 1 caràtere)
+        one: est tropu curtzu (su mìnimu est de %{count} caràtere)
         other: est tropu curtzu (su mìnimu est de %{count} caràteres)
       wrong_length:
-        one: est de sa longària isballiada (depet tènnere 1 caràtere)
+        one: est de sa longària isballiada (depet tènnere %{count} caràtere)
         other: est de sa longària isballiada (depet tènnere %{count} caràteres)
     template:
       body: 'Bi sunt istados problemas cun sos campos chi sighint:'
       header:
-        one: 'Non potzo sarvare custu %{model}: 1 errore'
+        one: 'Non potzo sarvare custu %{model}: %{count} errore'
         other: 'Non potzo sarvare custu %{model}: %{count} errores.'
   helpers:
     select:
