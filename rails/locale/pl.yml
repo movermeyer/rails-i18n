@@ -63,38 +63,38 @@ pl:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: około godziny
+        one: około %{count} godziny
         few: około %{count} godziny
         many: około %{count} godzin
         other: około %{count} godzin
       about_x_months:
-        one: około miesiąca
+        one: około %{count} miesiąc
         few: około %{count} miesiące
         many: około %{count} miesięcy
         other: około %{count} miesięcy
       about_x_years:
-        one: około rok
+        one: około  %{count} rok
         few: około %{count} lata
         many: około %{count} lat
         other: około %{count} lat
       almost_x_years:
-        one: prawie rok
+        one: prawie  %{count} rok
         few: prawie %{count} lata
         many: prawie %{count} lat
         other: prawie %{count} lat
       half_a_minute: pół minuty
       less_than_x_seconds:
-        one: mniej niż sekundę
+        one: mniej niż %{count} sekunda
         few: mniej niż %{count} sekundy
         many: mniej niż %{count} sekund
         other: mniej niż %{count} sekund
       less_than_x_minutes:
-        one: mniej niż minutę
+        one: mniej niż %{count} minuta
         few: mniej niż %{count} minuty
         many: mniej niż %{count} minut
         other: mniej niż %{count} minut
       over_x_years:
-        one: ponad rok
+        one: ponad %{count} rok
         few: ponad %{count} lata
         many: ponad %{count} lat
         other: ponad %{count} lat
@@ -149,24 +149,24 @@ pl:
       required: musi istnieć
       taken: zostało już zajęte
       too_long:
-        one: jest za długie (maksymalnie jeden znak)
+        one: jest za długie (maksymalnie %{count} znak)
         few: jest za długie (maksymalnie %{count} znaki)
         many: jest za długie (maksymalnie %{count} znaków)
         other: jest za długie (maksymalnie %{count} znaków)
       too_short:
-        one: jest za krótkie (przynajmniej jeden znak)
+        one: jest za krótkie (przynajmniej %{count} znak)
         few: jest za krótkie (przynajmniej %{count} znaki)
         many: jest za krótkie (przynajmniej %{count} znaków)
         other: jest za krótkie (przynajmniej %{count} znaków)
       wrong_length:
-        one: ma nieprawidłową długość (powinna wynosić jeden znak)
+        one: ma nieprawidłową długość (powinna wynosić %{count} znak)
         few: ma nieprawidłową długość (powinna wynosić %{count} znaki)
         many: ma nieprawidłową długość (powinna wynosić %{count} znaków)
         other: ma nieprawidłową długość (powinna wynosić %{count} znaków)
     template:
       body: 'Błędy dotyczą następujących pól:'
       header:
-        one: "%{model} nie został zachowany z powodu jednego błędu"
+        one: "%{model} nie został zachowany z powodu %{count} błędu"
         few: "%{model} nie został zachowany z powodu %{count} błędów"
         many: "%{model} nie został zachowany z powodu %{count} błędów"
         other: "%{model} nie został zachowany z powodu %{count} błędów"
